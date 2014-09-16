@@ -14,7 +14,7 @@ This script create a tunneling with local port forwarding to a remote Windows ma
 
 Require
 -------
-This require ssh installed on your local system and sshd installed running and accessible from home pc on your "work" pc
+This require ssh and krdc or rdesktop installed on your local system and sshd installed running and accessible from home pc on your "work" pc
 Windows machina must have rdp enable and an firewall rule to permit access (from work)
 
 More info
@@ -38,3 +38,23 @@ chmod +x ./SshPortsTunneling
 ```
 
 Now you can call the script from your CWD directory and answer the simple questions to setting the connection for your case.
+
+When the script do a ssh connection the proces goes in foreground, you can monitor it with 
+```ps - aux```
+and/or kill by take note of pid.
+
+RDP
+---
+Now the remote port 3389 is forwarded to your local port 3389, you can open kRDC (gui program) or rdesktop (cli program) to make a connection like this
+```
+rdesktop [options] server[:port]
+```
+in our case
+```
+rdesktop localhost
+```
+if you changed LPORT variable please specify it like
+```
+rdesktop localhost:9876
+```
+

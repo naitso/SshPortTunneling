@@ -19,15 +19,15 @@ Windows machina must have rdp enable and an firewall rule to permit access (from
 
 More info
 ---------
-For more info about ssh tunneling please see Buddhika Chamith's post at
-http://chamibuddhika.wordpress.com/2012/03/21/ssh-tunnelling-explained/
+For more info about ssh tunneling please see [Buddhika Chamith's](http://chamibuddhika.wordpress.com/2012/03/21/ssh-tunnelling-explained/) post
+or [this article on Revsys website](http://www.revsys.com/writings/quicktips/ssh-tunnel.html)
 
-Or this article on Revsys website
-http://www.revsys.com/writings/quicktips/ssh-tunnel.html
-
-For a list of common ports please see
-http://it.wikipedia.org/wiki/Lista_di_porte_standard 
-or /etc/services in a common linux box
+For a list of common ports please see [Wikipedia](http://it.wikipedia.org/wiki/Lista_di_porte_standard)
+or 
+```
+cat /etc/services 
+```
+in a common linux box
 
 How to use?
 -----------

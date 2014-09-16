@@ -5,11 +5,12 @@ About
 -----
 
 This script create a tunneling with local port forwarding to a remote Windows machine accessible only through work pc/work ip
+~~~
        _________          ________________          ________
       |         |        |                |        |        |
       | HOME PC | -----> | WORK PC TUNNEL | -----> | REMOTE |
       |_________|        |________________|        |________|
-
+~~~
 
 Require
 -------
@@ -32,7 +33,8 @@ How to use?
 -----------
 
 Save the file into your system ( "bin" path is prefeded )
-
+```
 chmod +x ./SshPortsTunneling
+```
 
 Now you can call the script from your CWD directory and answer the simple questions to setting the connection for your case.

@@ -64,6 +64,7 @@ read REMOTE
 # echo "ssh -f $RUSER@$RHOST -L $LPORT:$REMOTE:$RPORT -N"
 # this command opend a ssh connection and map remote port 3389 to local port 3389
 # after connection use rdesktop or krdc to connect with rdp protocol to localhost
-ssh -f $RUSER@$RHOST -L $LPORT:$REMOTE:$RPORT -N
-
+ssh -f $RUSER@$RHOST -L $LPORT:$REMOTE:$RPORT -N 
+SSHPID=`ps aux | grep "ssh -f $RUSER@$RHOST -L $LPORT:$REMOTE:$RPORT -N" | grep -v grep| cut -d " " -f4`
+echo "SSH PID $SSHPID"
 
